@@ -212,16 +212,15 @@ body.is-preload *:after {
 	width: 100%;
 	background-color: aliceblue;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
-	padding: 2%;
+	padding: 0 0 1em 0;
 	transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 #inner-bio {
-	width: 70%;
+	width: 80%;
 	background-color: aliceblue;
-	padding: 1%;
+	padding: 2%;
 }
 
 @keyframes fadeInUp {
@@ -245,6 +244,7 @@ body.is-preload *:after {
 @media screen and (max-width: 750px) {
 	#inner-bio {
 		display: grid;
+		place-items: center;
 	}
 }
 
@@ -311,7 +311,7 @@ i {
 }
 
 p {
-	margin: 0 0 2em 0;
+	margin: 0 0 1em 0;
 }
 
 .header-name {
@@ -2538,9 +2538,9 @@ input[type="radio"]+label:before {
 	width: auto;
 	max-width: 27em;
 	height: auto;
-	max-height: 16em;
+	max-height: 19em;
 	float: left;
-	padding: 1em 1em 0em 0em;
+	padding: .5em 1em 0em 0em;
 }
 
 @media screen and (max-width: 736px) {
@@ -2550,7 +2550,7 @@ input[type="radio"]+label:before {
 	}
 
 	#headshot {
-		padding: 1em 1em 0em 0em;
+		padding: 1em 1em 1.5em 0em
 	}
 
 }
@@ -3124,7 +3124,7 @@ body.is-touch .tiles article .content {
 @media screen and (max-width: 736px) {
 
 	.header {
-		padding: 4em 0 0.1em 0;
+		padding: 1em 0 0.1em 0;
 	}
 
 	.header nav {
@@ -3337,13 +3337,7 @@ body.is-menu-visible #menu .close {
 	padding: 10em 1010em 10;
 }
 
-@media screen and (max-width: 736px) {
-
-	#main {
-		padding: 0em 0 4em 0;
-	}
-
-}
+@media screen and (max-width: 736px) {}
 
 /* Footer */
 
