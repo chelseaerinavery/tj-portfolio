@@ -221,11 +221,9 @@ body.is-preload *:after {
 	width: 80%;
 	background-color: aliceblue;
 	padding: 2%;
+	opacity: 1;
 }
 
-@media screen and (max-width: 1680px) {}
-
-@media screen and (max-width: 1280px) {}
 
 @media screen and (max-width: 750px) {
 	#inner-bio {
@@ -2977,6 +2975,34 @@ body.is-touch .tiles article .content {
 
 }
 
+@media(hover: none) {
+
+	.tiles article>a .content> :last-child {
+		margin-bottom: 0;
+	}
+
+	body .tiles article:active>.image {
+		-moz-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	body .tiles article:active>.image:before {
+		background-color: #3C4473;
+		opacity: 0.8;
+	}
+
+	body .tiles article:active>.image:after {
+		opacity: 0;
+	}
+
+	body .tiles article:active .content {
+		max-height: 15em;
+		opacity: 1;
+	}
+}
+
 @media screen and (max-width: 980px) {
 
 	.tiles {
@@ -3045,31 +3071,6 @@ body.is-touch .tiles article .content {
 
 	.content-list {
 		list-style-type: none;
-	}
-
-	.tiles article>a .content> :last-child {
-		margin-bottom: 0;
-	}
-
-	body:not(.is-touch) .tiles article:hover>.image {
-		-moz-transform: scale(1.1);
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-
-	body:not(.is-touch) .tiles article:hover>.image:before {
-		background-color: #3C4473;
-		opacity: 0.8;
-	}
-
-	body:not(.is-touch) .tiles article:hover>.image:after {
-		opacity: 0;
-	}
-
-	body:not(.is-touch) .tiles article:hover .content {
-		max-height: 15em;
-		opacity: 1;
 	}
 
 }
