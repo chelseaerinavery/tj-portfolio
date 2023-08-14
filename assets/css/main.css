@@ -2914,7 +2914,7 @@ body:not(.is-touch) .tiles article:hover>.image:before {
 }
 
 body:not(.is-touch) .tiles article:hover>.image:after {
-	opacity: 0;
+	opacity: 1;
 }
 
 body:not(.is-touch) .tiles article:hover .content {
