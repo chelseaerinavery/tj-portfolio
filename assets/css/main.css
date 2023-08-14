@@ -221,7 +221,6 @@ body.is-preload *:after {
 #inner-bio {
 	width: 70%;
 	background-color: aliceblue;
-	display: flex;
 	padding: 1%;
 }
 
@@ -238,6 +237,18 @@ body.is-preload *:after {
 .fadeInUp-animation {
 	animation: 1.5s fadeInUp;
 }
+
+@media screen and (max-width: 1680px) {}
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 750px) {
+	#inner-bio {
+		display: grid;
+	}
+}
+
+@media screen and (max-width: 360px) {}
 
 /* Type */
 
@@ -2524,15 +2535,22 @@ input[type="radio"]+label:before {
 }
 
 #headshot {
-	/* float: left; */
-	padding: 0 1.5em 1em 0;
-	/* height: 45vh; */
+	width: auto;
+	max-width: 27em;
+	height: auto;
+	max-height: 16em;
+	float: left;
+	padding: 1em 1em 0em 0em;
 }
 
 @media screen and (max-width: 736px) {
 
 	.image.main {
 		margin: 0 0 2em 0;
+	}
+
+	#headshot {
+		padding: 1em 1em 0em 0em;
 	}
 
 }
@@ -3101,6 +3119,7 @@ body.is-touch .tiles article .content {
 .header nav ul li a[href="#menu"]:hover:after {
 	opacity: 0;
 }
+
 
 @media screen and (max-width: 736px) {
 
