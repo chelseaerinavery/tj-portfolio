@@ -196,7 +196,7 @@ $(document).ready(function () {
 	});
 
 	// Listen for touchend event
-	$('.tiles.overlay').on('touchend', function () {
+	$(document).on('touchend', function () {
 		// Deactivate the overlay regardless of its current state
 		$(this).removeClass('overlay');
 		isOverlayActive = false; // Reset the state
