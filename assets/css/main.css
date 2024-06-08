@@ -161,7 +161,7 @@ textarea {
 }
 
 .badge img {
-	height: 15%;
+	height: 11%;
 }
 
 @-ms-viewport {
@@ -192,7 +192,7 @@ html {
 }
 
 body {
-	background: #ffffff;
+	background: #F2F1F0;
 }
 
 body.is-preload *,
@@ -210,7 +210,7 @@ body.is-preload *:after {
 
 #bio {
 	width: 100%;
-	background-color: aliceblue;
+	background-color: #F2F1F0;
 	display: flex;
 	justify-content: center;
 	padding: 0 0 1em 0;
@@ -219,7 +219,7 @@ body.is-preload *:after {
 
 #inner-bio {
 	width: 80%;
-	background-color: aliceblue;
+	background-color: #F2F1F0;
 	padding: 2%;
 	opacity: 1;
 }
@@ -240,7 +240,7 @@ body,
 input,
 select,
 textarea {
-	color: #585858;
+	color: #262626;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 16pt;
 	font-weight: 300;
@@ -275,13 +275,13 @@ a {
 	-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	transition: border-bottom-color 0.2s ease, color 0.2s ease;
 	text-decoration: none;
-	color: #585858;
+	color: #262626;
 	border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 }
 
 a:hover {
 	border-bottom-color: transparent;
-	color: #04BF8A !important;
+	color: #F2A679 !important;
 }
 
 strong,
@@ -292,10 +292,6 @@ b {
 em,
 i {
 	font-style: italic;
-}
-
-p {
-	margin: 0 0 1em 0;
 }
 
 .header-name {
@@ -413,7 +409,7 @@ sup {
 }
 
 blockquote {
-	border-left: solid 4px #c9c9c9;
+	border-left: solid 4px #262626;
 	font-style: italic;
 	margin: 0 0 2em 0;
 	padding: 0.5em 0 0.5em 2em;
@@ -422,7 +418,7 @@ blockquote {
 code {
 	background: rgba(144, 144, 144, 0.075);
 	border-radius: 4px;
-	border: solid 1px #c9c9c9;
+	border: solid 1px #262626;
 	font-family: "Courier New", monospace;
 	font-size: 0.9em;
 	margin: 0 0.25em;
@@ -445,7 +441,7 @@ pre code {
 
 hr {
 	border: 0;
-	border-bottom: solid 1px #c9c9c9;
+	border-bottom: solid 1px #262626;
 	margin: 2em 0;
 }
 
@@ -1995,7 +1991,7 @@ header p {
 	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	background-color: transparent;
-	border: solid 1px #c9c9c9;
+	border: solid 1px #262626;
 	border-radius: 4px;
 	width: 2.65em;
 	height: 2.65em;
@@ -2010,8 +2006,8 @@ header p {
 }
 
 .icon.style2:hover {
-	color: #04BF8A;
-	border-color: #04BF8A;
+	color: #F2A679;
+	border-color: #F2A679;
 }
 
 .icon.style2:active {
@@ -2046,7 +2042,7 @@ ul.alt {
 }
 
 ul.alt li {
-	border-top: solid 1px #c9c9c9;
+	border-top: solid 1px #262626;
 	padding: 0.5em 0;
 }
 
@@ -2300,7 +2296,7 @@ textarea {
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
-	border-bottom: solid 1px #c9c9c9;
+	border-bottom: solid 1px #262626;
 	color: inherit;
 	display: block;
 	outline: 0;
@@ -2324,8 +2320,8 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-	border-bottom-color: #04BF8A;
-	box-shadow: inset 0 -1px 0 0 #04BF8A;
+	border-bottom-color: #F2A679;
+	box-shadow: inset 0 -1px 0 0 #F2A679;
 }
 
 select {
@@ -2379,7 +2375,7 @@ input[type="radio"] {
 input[type="checkbox"]+label,
 input[type="radio"]+label {
 	text-decoration: none;
-	color: #585858;
+	color: #262626;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1em;
@@ -2406,7 +2402,7 @@ input[type="radio"]+label:before {
 input[type="checkbox"]+label:before,
 input[type="radio"]+label:before {
 	border-radius: 4px;
-	border: solid 1px #c9c9c9;
+	border: solid 1px #262626;
 	content: '';
 	display: inline-block;
 	font-size: 0.8em;
@@ -2421,16 +2417,16 @@ input[type="radio"]+label:before {
 
 input[type="checkbox"]:checked+label:before,
 input[type="radio"]:checked+label:before {
-	background: #585858;
-	border-color: #585858;
+	background: #262626;
+	border-color: #262626;
 	color: #ffffff;
 	content: '\f00c';
 }
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-	border-color: #04BF8A;
-	box-shadow: 0 0 0 1px #04BF8A;
+	border-color: #F2A679;
+	box-shadow: 0 0 0 1px #F2A679;
 }
 
 input[type="checkbox"]+label:before {
@@ -2445,7 +2441,7 @@ input[type="radio"]+label:before {
 
 .box {
 	border-radius: 4px;
-	border: solid 1px #c9c9c9;
+	border: solid 1px #262626;
 	margin-bottom: 2em;
 	padding: 1.5em;
 }
@@ -2552,7 +2548,7 @@ table {
 }
 
 table tbody tr {
-	border: solid 1px #c9c9c9;
+	border: solid 1px #262626;
 	border-left: 0;
 	border-right: 0;
 }
@@ -2573,11 +2569,11 @@ table th {
 }
 
 table thead {
-	border-bottom: solid 2px #c9c9c9;
+	border-bottom: solid 2px #262626;
 }
 
 table tfoot {
-	border-top: solid 2px #c9c9c9;
+	border-top: solid 2px #262626;
 }
 
 table.alt {
@@ -2585,7 +2581,7 @@ table.alt {
 }
 
 table.alt tbody tr td {
-	border: solid 1px #c9c9c9;
+	border: solid 1px #262626;
 	border-left-width: 0;
 	border-top-width: 0;
 }
@@ -2624,8 +2620,8 @@ button,
 	background-color: transparent;
 	border-radius: 4px;
 	border: 0;
-	box-shadow: inset 0 0 0 2px #585858;
-	color: #585858 !important;
+	box-shadow: inset 0 0 0 2px #262626;
+	color: #262626 !important;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0.8em;
@@ -2663,8 +2659,8 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-	color: #04BF8A !important;
-	box-shadow: inset 0 0 0 2px #04BF8A;
+	color: #F2A679 !important;
+	box-shadow: inset 0 0 0 2px #F2A679;
 }
 
 input[type="submit"]:active,
@@ -2697,8 +2693,9 @@ input[type="button"].primary,
 button.primary,
 .button.primary {
 	box-shadow: none;
-	background-color: #585858;
+	background-color: #262626;
 	color: #ffffff !important;
+	margin-top: 3%;
 }
 
 input[type="submit"].primary:hover,
@@ -2706,7 +2703,7 @@ input[type="reset"].primary:hover,
 input[type="button"].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-	background-color: #04BF8A;
+	background-color: #F2A679;
 }
 
 input[type="submit"].primary:active,
@@ -2975,7 +2972,7 @@ body.is-touch .tiles article .content {
 
 }
 
-@media(hover: none) {
+@media not all and (hover: none) {
 
 	.tiles article>a .content> :last-child {
 		margin-bottom: 0;
@@ -3271,7 +3268,7 @@ body.is-touch .tiles article .content {
 	max-width: 80%;
 	height: 100%;
 	-webkit-overflow-scrolling: touch;
-	background: #585858;
+	background: #262626;
 	color: #ffffff;
 	cursor: default;
 	visibility: hidden;
@@ -3449,7 +3446,7 @@ body.is-menu-visible #menu .close {
 
 #footer {
 	padding: 5em 0 6em 0;
-	background-color: #f6f6f6;
+	background-color: #828C7D;
 }
 
 #footer>.inner {
@@ -3487,7 +3484,7 @@ body.is-menu-visible #menu .close {
 	margin-top: 5em;
 	list-style: none;
 	font-size: 0.8em;
-	color: rgba(88, 88, 88, 0.5);
+	color: #262626;
 }
 
 #footer>.inner .copyright a {
