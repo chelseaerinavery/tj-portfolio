@@ -161,7 +161,8 @@ textarea {
 }
 
 .badge img {
-	height: 11%;
+	height: 2em;
+	border-radius: 3%;
 }
 
 @-ms-viewport {
@@ -338,7 +339,7 @@ h5,
 h6 {
 	font-weight: 900;
 	line-height: 1.5;
-	margin: 0 0 2em 0;
+	margin-bottom: 2px;
 	text-transform: uppercase;
 	letter-spacing: 0.35em;
 }
@@ -2011,7 +2012,7 @@ header p {
 }
 
 .icon.style2:active {
-	background-color: rgba(242, 132, 158, 0.1);
+	background-color: #262626;
 }
 
 /* List */
@@ -2027,13 +2028,7 @@ ol li {
 }
 
 ul {
-	list-style: disc;
-	margin: 0 0 2em 0;
-	padding-left: 1em;
-}
-
-ul li {
-	padding-left: 0.5em;
+	margin-bottom: 2em;
 }
 
 ul.alt {
@@ -2193,12 +2188,10 @@ ul.icons {
 	cursor: default;
 	list-style: none;
 	padding-left: 0;
-	margin: -1em 0 2em -1em;
 }
 
 ul.icons li {
 	display: inline-block;
-	padding: 1em 0 0 1em;
 }
 
 /* Form */
@@ -2695,7 +2688,7 @@ button.primary,
 	box-shadow: none;
 	background-color: #262626;
 	color: #ffffff !important;
-	margin-top: 3%;
+	margin-top: .8%;
 }
 
 input[type="submit"].primary:hover,
@@ -2769,6 +2762,7 @@ button:disabled,
 .tiles article>.image img {
 	display: block;
 	width: 100%;
+	max-height: 538.51px;
 }
 
 .tiles article>.image:before {
@@ -2929,7 +2923,7 @@ body:not(.is-touch) .tiles article:hover>.image {
 }
 
 body:not(.is-touch) .tiles article:hover>.image:before {
-	background-color: #3C4473;
+	background-color: #262626;
 	opacity: 0.8;
 }
 
@@ -3011,6 +3005,9 @@ body.is-touch .tiles article .content {
 		margin: 2.5em 0 0 2.5em;
 	}
 
+	.tiles img {
+		max-height: 474.52px;
+	}
 
 	/* Mobile Overlay */
 	.tiles article .content {
@@ -3070,6 +3067,9 @@ body.is-touch .tiles article .content {
 		list-style-type: none;
 	}
 
+	.tiles img {
+		max-height: 474.52px;
+	}
 }
 
 @media screen and (max-width: 736px) {
@@ -3081,6 +3081,10 @@ body.is-touch .tiles article .content {
 	.tiles article {
 		width: calc(50% - 1.25em);
 		margin: 1.25em 0 0 1.25em;
+	}
+
+	.tiles img {
+		max-height: 474.52px;
 	}
 
 }
@@ -3596,6 +3600,7 @@ body.is-menu-visible #menu .close {
 #wrapper>*>.inner {
 	max-width: 68em;
 	margin: 0 auto;
+	margin-bottom: 10px;
 	padding: 0 2.5em;
 	display: flex;
 	flex-direction: row;
@@ -3609,4 +3614,16 @@ body.is-menu-visible #menu .close {
 		padding: 0 1.25em;
 	}
 
+}
+
+.top-bio-p {
+	margin-bottom: 3% !important
+}
+
+input::placeholder {
+	color: #262626;
+}
+
+textarea::placeholder {
+	color: #262626;
 }
