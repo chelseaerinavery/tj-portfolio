@@ -183,12 +183,12 @@
 $(document).ready(function () {
 	// Listen for touchstart event
 	$('.tiles').on('touchstart', function () {
-		$(this).addClass('.overlay'); // Add class to simulate hover
+		$(this).addClass('overlay'); // Add class to simulate hover
 	});
 
 	// Listen for touchend event
 	$('.tiles').on('touchend', function () {
-		$(this).removeClass('.overlay'); // Remove class to revert hover effect
+		$(this).removeClass('overlay'); // Remove class to revert hover effect
 	});
 });
 
