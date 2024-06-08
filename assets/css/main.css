@@ -3438,7 +3438,7 @@ body.is-menu-visible #menu .close {
 
 #footer>.inner .copyright {
 	width: 100%;
-	padding: 0;
+	padding: 1%;
 	list-style: none;
 	font-size: 0.8em;
 	color: #262626;
