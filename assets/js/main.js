@@ -179,13 +179,36 @@
 })(jQuery);
 
 //Mobile Overlay Behavior 
-
 $(document).ready(function () {
-	$('.tiles img').on('touchstart touchend', function (e) {
-		e.preventDefault(); // Prevents the default action of the event
-		$(this).toggleClass('overlay');
+	// Track the state of the overlay
+	var isOverlayActive = false;
+
+	// Listen for touchstart event
+	$('.tiles').on('touchstart', function () {
+		// Check if the overlay is currently active
+		if (!isOverlayActive) {
+			$(this).addClass('overlay'); // Activate the overlay
+			isOverlayActive = true; // Update the state
+		} else {
+			$(this).removeClass('overlay'); // Deactivate the overlay
+			isOverlayActive = false; // Update the state
+		}
+	});
+
+	// Listen for touchend event
+	$('.tiles').on('touchend', function () {
+		// Deactivate the overlay regardless of its current state
+		$(this).removeClass('overlay');
+		isOverlayActive = false; // Reset the state
 	});
 });
+
+// $(document).ready(function () {
+// 	$('.tiles img').on('touchstart touchend', function (e) {
+// 		e.preventDefault(); // Prevents the default action of the event
+// 		$(this).toggleClass('overlay');
+// 	});
+// });
 
 // $(document).ready(function () {
 // 	// Listen for touchstart event
