@@ -179,29 +179,53 @@
 })(jQuery);
 
 //Mobile Overlay Behavior 
-$(document).ready(function () {
+
+
+(document).ready(function () {
 	// Track the state of the overlay
 	var isOverlayActive = false;
 
-	// Listen for touchstart event
+	// Listen for touchstart event on '.tiles'
 	$('.tiles').on('touchstart', function () {
-		// Check if the overlay is currently active
-		if (!isOverlayActive) {
-			$(this).addClass('overlay'); // Activate the overlay
-			isOverlayActive = true; // Update the state
-		} else {
-			$(this).removeClass('overlay'); // Deactivate the overlay
-			isOverlayActive = false; // Update the state
-		}
+		// Toggle the overlay based on its current state
+		$(this).toggleClass('overlay', !isOverlayActive);
+		isOverlayActive = !isOverlayActive;
 	});
 
-	// Listen for touchend event
+	// Listen for touchend event on the document
 	$(document).on('touchend', function () {
-		// Deactivate the overlay regardless of its current state
-		$(this).removeClass('overlay');
-		isOverlayActive = false; // Reset the state
+		// Deactivate the overlay if it's active
+		if (isOverlayActive) {
+			$('.tiles.overlay').removeClass('overlay');
+			isOverlayActive = false;
+		}
 	});
 });
+
+
+// $(document).ready(function () {
+// 	// Track the state of the overlay
+// 	var isOverlayActive = false;
+
+// 	// Listen for touchstart event
+// 	$('.tiles').on('touchstart', function () {
+// 		// Check if the overlay is currently active
+// 		if (!isOverlayActive) {
+// 			$(this).addClass('overlay'); // Activate the overlay
+// 			isOverlayActive = true; // Update the state
+// 		} else {
+// 			$(this).removeClass('overlay'); // Deactivate the overlay
+// 			isOverlayActive = false; // Update the state
+// 		}
+// 	});
+
+// 	// Listen for touchend event
+// 	$(document).on('touchend', function () {
+// 		// Deactivate the overlay regardless of its current state
+// 		$(this).removeClass('overlay');
+// 		isOverlayActive = false; // Reset the state
+// 	});
+// });
 
 // $(document).ready(function () {
 // 	$('.tiles img').on('touchstart touchend', function (e) {
