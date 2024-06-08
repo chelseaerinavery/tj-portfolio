@@ -20,9 +20,9 @@
 		}, 100);
 	});
 
-	// Touch?
-	if (browser.mobile)
-		$body.addClass('is-touch');
+	// // Touch?
+	// if (browser.mobile)
+	// 	$body.addClass('is-touch');
 
 	// Forms.
 	var $form = $('form');
@@ -181,16 +181,23 @@
 //Mobile Overlay Behavior 
 
 $(document).ready(function () {
-	// Listen for touchstart event
-	$('.tiles').on('touchstart', function () {
-		$(this).addClass('overlay'); // Add class to simulate hover
-	});
-
-	// Listen for touchend event
-	$('.tiles').on('touchend', function () {
-		$(this).removeClass('overlay'); // Remove class to revert hover effect
+	$('.tiles img').on('touchstart touchend', function (e) {
+		e.preventDefault(); // Prevents the default action of the event
+		$(this).toggleClass('overlay');
 	});
 });
+
+// $(document).ready(function () {
+// 	// Listen for touchstart event
+// 	$('.tiles').on('touchstart', function () {
+// 		$(this).addClass('overlay'); // Add class to simulate hover
+// 	});
+
+// 	// Listen for touchend event
+// 	$('.tiles').on('touchend', function () {
+// 		$(this).removeClass('overlay'); // Remove class to revert hover effect
+// 	});
+// });
 
 // var overlays = document.querySelectorAll('.overlay');
 
