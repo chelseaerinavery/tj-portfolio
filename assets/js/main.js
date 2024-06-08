@@ -178,11 +178,19 @@
 
 })(jQuery);
 
-
 //Mobile Overlay Behavior 
 
-document.querySelector('.overlay').addEventListener('click', toggleOverlay)
+var overlays = document.querySelectorAll('.overlay');
 
-function removeOverlayOnMobile() {
-	document.querySelector('.overlay').classList.remove('active')
+// Define the toggleOverlay function
+function toggleOverlay(event) {
+	event.preventDefault(); // Prevents the default action of the event
+	var overlay = event.currentTarget; // Gets the current target element
+	overlay.classList.toggle('active'); // Toggles the 'active' class
 }
+
+// Attach touchstart and touchend event listeners to each overlay
+overlays.forEach(function (overlay) {
+	overlay.addEventListener('touchstart', toggleOverlay, false);
+	overlay.addEventListener('touchend', toggleOverlay, false);
+});
