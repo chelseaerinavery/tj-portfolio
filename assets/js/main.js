@@ -180,17 +180,29 @@
 
 //Mobile Overlay Behavior 
 
-var overlays = document.querySelectorAll('.overlay');
+// $(document).ready(function () {
+// 	// Listen for touchstart event
+// 	$('.tiles').on('touchstart', function () {
+// 		$(this).addClass('.overlay'); // Add class to simulate hover
+// 	});
 
-// Define the toggleOverlay function
-function toggleOverlay(event) {
-	event.preventDefault(); // Prevents the default action of the event
-	var overlay = event.currentTarget; // Gets the current target element
-	overlay.classList.toggle('active'); // Toggles the 'active' class
-}
+// 	// Listen for touchend event
+// 	$('.tiles').on('touchend', function () {
+// 		$(this).removeClass('.overlay'); // Remove class to revert hover effect
+// 	});
+// });
 
-// Attach touchstart and touchend event listeners to each overlay
-overlays.forEach(function (overlay) {
-	overlay.addEventListener('touchstart', toggleOverlay, false);
-	overlay.addEventListener('touchend', toggleOverlay, false);
-});
+// var overlays = document.querySelectorAll('.overlay');
+
+// // Define the toggleOverlay function
+// function toggleOverlay(event) {
+// 	event.preventDefault(); // Prevents the default action of the event
+// 	var overlay = event.currentTarget; // Gets the current target element
+// 	overlay.classList.toggle('active'); // Toggles the 'active' class
+// }
+
+// // Attach touchstart and touchend event listeners to each overlay
+// overlays.forEach(function (overlay) {
+// 	overlay.addEventListener('touchstart', toggleOverlay, false);
+// 	overlay.addEventListener('touchend', toggleOverlay, false);
+// });
