@@ -195,12 +195,12 @@ $(document).ready(function () {
 		}
 	});
 
-	// // Listen for touchend event
-	// $('.tiles').on('touchend', function () {
-	// 	// Deactivate the overlay regardless of its current state
-	// 	$(this).removeClass('overlay');
-	// 	isOverlayActive = false; // Reset the state
-	// });
+	// Listen for touchend event
+	$('.tiles.overlay').on('touchend', function () {
+		// Deactivate the overlay regardless of its current state
+		$(this).removeClass('overlay');
+		isOverlayActive = false; // Reset the state
+	});
 });
 
 // $(document).ready(function () {
