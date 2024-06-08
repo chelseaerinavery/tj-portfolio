@@ -180,17 +180,17 @@
 
 //Mobile Overlay Behavior 
 
-// $(document).ready(function () {
-// 	// Listen for touchstart event
-// 	$('.tiles').on('touchstart', function () {
-// 		$(this).addClass('.overlay'); // Add class to simulate hover
-// 	});
+$(document).ready(function () {
+	// Listen for touchstart event
+	$('.tiles').on('touchstart', function () {
+		$(this).addClass('.overlay'); // Add class to simulate hover
+	});
 
-// 	// Listen for touchend event
-// 	$('.tiles').on('touchend', function () {
-// 		$(this).removeClass('.overlay'); // Remove class to revert hover effect
-// 	});
-// });
+	// Listen for touchend event
+	$('.tiles').on('touchend', function () {
+		$(this).removeClass('.overlay'); // Remove class to revert hover effect
+	});
+});
 
 // var overlays = document.querySelectorAll('.overlay');
 
