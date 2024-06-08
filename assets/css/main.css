@@ -2747,11 +2747,11 @@ button:disabled,
 
 .tiles .overlay>.image {
 	position: relative;
-	display: block;
+	/* display: block; */
 }
 
 .tiles .overlay>.image:before {
-	pointer-events: none;
+	/* pointer-events: none; */
 	-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
 	-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
 	-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
@@ -2823,17 +2823,17 @@ button:disabled,
 	font-size: .85em;
 }
 
-/* .tiles .overlay>a> :last-child {
+.tiles .overlay>a> :last-child {
 	margin: 0;
-} */
+}
 
-/* .tiles .overlay>a:hover {
+.tiles .overlay>a:hover {
 	color: #ffffff !important;
-} */
+}
 
-/* .tiles .overlay>a h2 {
+.tiles .overlay>a h2 {
 	margin: 0;
-} */
+}
 
 
 /* TILE OVERLAY */
@@ -2873,7 +2873,7 @@ button:disabled,
 	transition: background-color 0.5s ease;
 	position: absolute;
 	top: 30%;
-	left: 0;
+	left: 10%f;
 	width: auto;
 	height: auto;
 	/* padding: 1em; */
