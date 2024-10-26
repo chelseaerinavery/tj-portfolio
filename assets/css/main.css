@@ -2242,6 +2242,32 @@ form>.fields>.field.quarter {
 	width: calc(25% - 0.375em);
 }
 
+/* Focus styles */
+input#email:focus {
+	background-color: #828C7D;
+	/* Background color when focused */
+	outline: none;
+	/* Remove default outline */
+}
+
+/* Autofill styles */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #828C7D inset !important;
+	/* Change to your desired color */
+	box-shadow: 0 0 0 30px #828C7D inset !important;
+	/* For Firefox */
+	-webkit-text-fill-color: black !important;
+	/* Change text color if needed */
+}
+
+/* Prevent autofill background color on focus */
+input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0 30px #828C7D inset !important;
+	/* Keep autofill color consistent */
+	box-shadow: 0 0 0 30px #828C7D inset !important;
+	/* For Firefox */
+}
+
 @media screen and (max-width: 480px) {
 
 	form>.fields {
@@ -2342,12 +2368,12 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 select {
-	height: 3em;
+	height: 2em;
 }
 
 textarea {
 	padding: 0;
-	min-height: 3.75em;
+	min-height: 2em;
 }
 
 input[type="checkbox"],
