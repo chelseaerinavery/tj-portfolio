@@ -2978,7 +2978,7 @@ body.is-preload .tiles .overlay {
 	}
 
 	.tiles img {
-		max-height: 80vh;
+		max-width: 80vw;
 	}
 
 	.tiles .overlay .content {
