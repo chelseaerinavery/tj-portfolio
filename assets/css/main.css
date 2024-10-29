@@ -3365,6 +3365,7 @@ body.is-menu-visible #menu .close {
 #footer {
 	padding-top: 3%;
 	background-color: #828C7D;
+	height: 100%;
 }
 
 #footer>.inner {
@@ -3426,6 +3427,7 @@ body.is-menu-visible #menu .close {
 
 	#footer {
 		padding: 5em 0 3em 0;
+		height: 100%;
 	}
 
 	#footer>.inner section:nth-child(1) {
