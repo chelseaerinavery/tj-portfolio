@@ -3363,9 +3363,9 @@ body.is-menu-visible #menu .close {
 /* Footer */
 
 #footer {
-	padding-top: 3%;
+	padding: 3%;
 	background-color: #828C7D;
-	height: 100%;
+	margin-top: auto;
 }
 
 #footer>.inner {
@@ -3424,11 +3424,6 @@ body.is-menu-visible #menu .close {
 }
 
 @media screen and (max-width: 1280px) {
-
-	#footer {
-		padding: 5em 0 3em 0;
-		height: 100%;
-	}
 
 	#footer>.inner section:nth-child(1) {
 		width: calc(66% - 1.25em);
@@ -3511,6 +3506,10 @@ body.is-menu-visible #menu .close {
 }
 
 /* Wrapper */
+
+#wrapper {
+	min-height: 100vh;
+}
 
 #wrapper>*>.inner {
 	padding: 0 2.5em;
