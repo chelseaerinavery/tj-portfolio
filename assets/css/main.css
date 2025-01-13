@@ -212,6 +212,7 @@ body.is-preload *:after {
 
 #bio {
 	width: 100%;
+	min-height: 60%;
 	background-color: #F2F1F0;
 	display: flex;
 	justify-content: center;
@@ -219,7 +220,7 @@ body.is-preload *:after {
 }
 
 #inner-bio {
-	width: 80%;
+	width: 50%;
 	background-color: #F2F1F0;
 	padding: 2%;
 	opacity: 1;
@@ -228,6 +229,7 @@ body.is-preload *:after {
 
 @media screen and (max-width: 750px) {
 	#inner-bio {
+		width: 80%;
 		display: grid;
 		place-items: center;
 	}
@@ -2356,10 +2358,6 @@ select {
 	text-overflow: ellipsis;
 }
 
-select option {
-	/* background: #ffffff; */
-}
-
 select:focus::-ms-value {
 	background-color: transparent;
 }
@@ -3366,6 +3364,7 @@ body.is-menu-visible #menu .close {
 	padding: 3%;
 	background-color: #828C7D;
 	margin-top: auto;
+	height: 100vh;
 }
 
 #footer>.inner {
