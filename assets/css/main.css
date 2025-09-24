@@ -3546,3 +3546,36 @@ input::placeholder {
 textarea::placeholder {
 	color: #262626;
 }
+
+/* 1) Promote and contain the image layer */
+.tiles .overlay>.image {
+	position: relative;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	contain: paint;
+}
+
+/* 2) Pre-create the dark overlay; only fade opacity */
+.tiles .overlay>.image:before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: #262626;
+	opacity: 0;
+	transition: opacity .35s ease;
+	will-change: opacity;
+}
+
+body:not(.is-touch) .tiles .overlay:hover>.image:before {
+	opacity: .8;
+}
+
+/* 3) (Optional) Kill the extra layer if unused */
+.tiles .overlay>.image:after {
+	display: none;
+}
+
+/* 4) (Small hardening) Stop layout thrash on first hover */
+.tiles .overlay .content {
+	transition: opacity .35s ease !important;
+}
