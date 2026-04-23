@@ -3535,8 +3535,8 @@ body.is-menu-visible #menu .close {
 
 }
 
-.top-bio-p {
-	margin-bottom: 3% !important
+#inner-bio p {
+	margin-bottom: 3%;
 }
 
 input::placeholder {
